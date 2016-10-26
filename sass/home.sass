@@ -1,0 +1,83 @@
+﻿$font: rgb(56, 69, 79)
+$font-light: rgb(113, 126, 136)
+$main-color: rgb(135, 178, 97)
+$break-small: 550px
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+
+body
+  background-color: $main-color
+
+#top
+  width: 100%
+  height: 40vh
+  position: relative
+  background-color: white
+  
+  @media screen and (max-height: $break-small)
+    height: 100vh
+  
+  #title
+    font:
+      size: 32px
+      family: 'Montserrat'
+    color: rgb(56, 69, 79)
+    position: absolute
+    left: 50%
+    bottom: 50px
+    transform: translateX(-50%)
+    margin-top: 50px
+    
+    @media screen and (max-height: $break-small)
+      bottom: 50%
+      transform: translate(-50%, 50%)
+    
+    #main
+      width: 100%
+      text-align: center
+      
+    #divider
+      width: 90px
+      height: 3px
+      background-color: $main-color
+      margin: 20px auto
+      
+    #sub
+      width: 100%
+      text-align: center
+      font-size: 16px
+      color: $font-light
+      
+#bottom
+  width: 100%
+  position: relative
+  
+  #search
+    margin: 50px auto
+    color: white
+    display: inline-block
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    padding: 5px
+    font:
+      family: 'Montserrat'
+      
+    #subreddit
+      font-size: 18px
+      background-color: transparent
+      border: none
+      border-bottom: 2px solid white
+      color: white
+      width: 150px
+      display: block
+      border-radius: 0
+    
+      &:focus
+        outline: none
+    
+    label
+      font-size: 14px
+  
+  @media screen and (max-height: $break-small)
+    height: 100vh
