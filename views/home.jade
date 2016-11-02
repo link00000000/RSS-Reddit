@@ -11,6 +11,6 @@ html
             #divider
             #sub View Reddit through an RSS feed
     #bottom
-        form#search(action="#" onsubmit="return false")
-            input#subreddit(type="text")
+        form#search(action="/" method="POST")
+            input#subreddit(type="text" name="subreddit")
             label Subreddit

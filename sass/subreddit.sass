@@ -1,0 +1,97 @@
+﻿$font: rgb(56, 69, 79)
+$font-light: rgb(113, 126, 136)
+$main-color: rgb(135, 178, 97)
+$gray: rgb(245, 245, 245)
+$dark-gray: rgb(228, 234, 237)
+$break-small: 550px
+$break-small-h: 500px
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+
+body
+  background-color: $gray
+  
+#top
+  width: 100%
+  position: relative
+  background-color: $main-color
+  border-bottom: 1px solid adjust-color($main-color, $lightness: -5)
+  box-shadow: 1px 0px 10px 1px rgba(0,0,0,.5)
+  
+  #title
+    font:
+      size: 32px
+      family: 'Montserrat'
+    color: white
+    padding: 50px
+    
+    #main
+      width: 100%
+      text-align: center
+      
+    #divider
+      width: 90px
+      height: 3px
+      background-color: white
+      margin: 20px auto
+      
+    #sub
+      width: 100%
+      text-align: center
+      font-size: 16px
+      color: #eee
+      
+#bottom
+  width: 100%
+  
+  #content
+    width: 90vw
+    margin: 0 auto
+    background-color: white
+    
+    @media screen and (max-width: $break-small-h)
+      width: 100%
+    
+    .comment
+      width: 100%
+      background-color: white
+      border-bottom: 1px solid $gray
+      padding: 20px 20px 30px 20px
+      box-sizing: border-box
+      
+      a
+        text-decoration: none
+      
+      .title
+        font:
+          size: 16px
+          family: 'Montserrat'
+        margin: 20px 0
+        display: block
+        color: $font
+        cursor: pointer
+        
+        &:hover
+          color: $main-color
+        
+      .author
+        font:
+          size: 14px
+          family: 'Montserrat'
+        display: block
+        float: left
+        color: $font-light
+        cursor: pointer
+        
+        &:hover
+          color: $main-color
+        
+      .timestamp
+        font:
+          size: 14px
+          family: 'Montserrat'
+        display: block
+        color: $font-light
+        float: right
+        
+      

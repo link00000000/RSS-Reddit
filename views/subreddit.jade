@@ -1,0 +1,23 @@
+﻿doctype html
+html
+  head
+    title #{subreddit}
+    link(rel="stylesheet" type="text/css" href="/css/dist/normalize.css")
+    link(rel="stylesheet" type="text/css" href="/css/subreddit.css")
+  body
+    #top
+        #title
+            // feed.title
+            #main #{subreddit}
+            #divider
+            // feed.subtitle
+            #sub #{subtitle}
+    #bottom
+        #content
+            each comment in comments
+                .comment
+                    a(href="#")
+                        span.title= comment.title
+                    span.timestamp= comment.timestamp
+                    a(href="#")
+                        span.author= comment.author[0].name[0].replace('/u/', '')

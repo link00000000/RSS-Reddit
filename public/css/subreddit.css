@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  background-color: whitesmoke; }
+
+#top {
+  width: 100%;
+  position: relative;
+  background-color: #87b261;
+  border-bottom: 1px solid #7aa852;
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5); }
+  #top #title {
+    font-size: 32px;
+    font-family: "Montserrat";
+    color: white;
+    padding: 50px; }
+    #top #title #main {
+      width: 100%;
+      text-align: center; }
+    #top #title #divider {
+      width: 90px;
+      height: 3px;
+      background-color: white;
+      margin: 20px auto; }
+    #top #title #sub {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      color: #eee; }
+
+#bottom {
+  width: 100%; }
+  #bottom #content {
+    width: 90vw;
+    margin: 0 auto;
+    background-color: white; }
+    @media screen and (max-width: 500px) {
+      #bottom #content {
+        width: 100%; } }
+    #bottom #content .comment {
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid whitesmoke;
+      padding: 20px 20px 30px 20px;
+      box-sizing: border-box; }
+      #bottom #content .comment a {
+        text-decoration: none; }
+      #bottom #content .comment .title {
+        font-size: 16px;
+        font-family: "Montserrat";
+        margin: 20px 0;
+        display: block;
+        color: #38454f;
+        cursor: pointer; }
+        #bottom #content .comment .title:hover {
+          color: #87b261; }
+      #bottom #content .comment .author {
+        font-size: 14px;
+        font-family: "Montserrat";
+        display: block;
+        float: left;
+        color: #717e88;
+        cursor: pointer; }
+        #bottom #content .comment .author:hover {
+          color: #87b261; }
+      #bottom #content .comment .timestamp {
+        font-size: 14px;
+        font-family: "Montserrat";
+        display: block;
+        color: #717e88;
+        float: right; }
+
+/*# sourceMappingURL=subreddit.css.map */
